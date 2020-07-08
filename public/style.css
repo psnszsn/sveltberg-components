@@ -1,0 +1,189 @@
+ :root {
+  --background-color: #fffffe;
+  --background-darker-color: #f2f4f6;
+  --med-bg-color: #e3f6f5;
+  /* --primary-color: #272343; */
+  --primary-color: #3da9fc;
+  --primary2-color: #2d334a;
+  --link-color: #3273dc;
+}
+
+
+body {
+    background-color: var(--background-color);
+}
+body, button, input, select, textarea{
+    font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+a {
+    color: var(--link-color);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+hr {
+    background-color: whitesmoke;
+    border: none;
+    display: block;
+    height: 2px;
+    margin: 0.6rem 0 1rem;
+}
+
+
+.container {
+  flex-grow: 1;
+  margin: 0 auto;
+  position: relative;
+  width: auto;
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media screen and (min-width: 1216px) {
+  .container {
+    max-width: 1152px;
+  }
+}
+
+@media screen and (min-width: 1408px) {
+  .container {
+    max-width: 1344px;
+  }
+}
+.tag {
+    align-items: center;
+    background-color: whitesmoke;
+    border-radius: 4px;
+    color: #4a4a4a;
+    display: inline-flex;
+    font-size: 0.75rem;
+    height: 2em;
+    justify-content: center;
+    line-height: 1.5;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    white-space: nowrap;
+}
+
+.tag:not(body).is-dark {
+    background-color: #363636;
+    color: #fff;
+}
+
+.tag:not(body).is-success {
+    background-color: #48c774;
+    color: #fff;
+}
+.tag:not(body).is-info {
+    background-color: #3298dc;
+    color: #fff;
+}
+
+
+.delete::before, .delete::after {
+    background-color: white;
+    content: "";
+    display: block;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    transform-origin: center center;
+}
+
+.delete::before {
+    height: 2px;
+    width: 50%;
+}
+.delete::after {
+    height: 50%;
+    width: 2px;
+}
+
+.delete {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background-color: rgba(10, 10, 10, 0.2);
+    border: none;
+    border-radius: 290486px;
+    cursor: pointer;
+    pointer-events: auto;
+    display: inline-block;
+    flex-grow: 0;
+    flex-shrink: 0;
+    font-size: 0;
+    height: 20px;
+    max-height: 20px;
+    max-width: 20px;
+    min-height: 20px;
+    min-width: 20px;
+    outline: none;
+    position: relative;
+    vertical-align: top;
+    width: 20px;
+    user-select: none;
+}
+
+.delete:focus, .delete:hover {
+    background-color: rgba(10,10,10,.3);
+}
+
+
+
+
+.box {
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
+    color: #4a4a4a;
+    display: block;
+    padding: 1.25rem;
+}
+
+
+.card {
+        background-color: white;
+    box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
+    color: #4a4a4a;
+    max-width: 100%;
+    position: relative;
+    padding: 1rem;
+}
+
+
+.is-hidden {
+  display: none !important;
+}
+
+
+ .loader {
+  animation: spinAround 500ms infinite linear;
+  border: 2px solid #dbdbdb;
+  border-radius: 290486px;
+  border-right-color: transparent;
+  border-top-color: transparent;
+  content: "";
+  display: block;
+  height: 1em;
+  position: relative;
+  width: 1em;
+}
+
+@keyframes spinAround {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+
+
+

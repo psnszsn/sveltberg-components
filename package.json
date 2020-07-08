@@ -1,0 +1,21 @@
+{
+    "name": "sveltberg-components",
+    "version": "0.0.0",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build"
+    },
+    "dependencies": {
+        "svelte": "^3.23.2"
+    },
+    "devDependencies": {
+        "svite": "latest",
+        "vite": "^1.0.0-beta.10"
+    },
+    "prettier": {
+        "svelteSortOrder": "scripts-markup-styles",
+        "svelteBracketNewLine": true,
+        "tabWidth": 4,
+        "trailingComma": "es5"
+    }
+}
