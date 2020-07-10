@@ -4,6 +4,7 @@
         isActive = false,
         isFreeForm = false,
         isSmall = false,
+        disabled = false,
         noActiveFilter = false,
         type = "button",
         form = null,
@@ -35,6 +36,7 @@
     <button
         {type}
         {form}
+        {disabled}
         on:click
         class:is-active={isActive}
         class:is-primary={color === 'primary'}
@@ -155,6 +157,9 @@
     button[disabled],
     :global(fieldset[disabled]) button {
         cursor: not-allowed;
+        box-shadow: none;
+        opacity: 0.5;
+        pointer-events: none;
     }
 
     button.is-loading {
